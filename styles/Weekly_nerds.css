@@ -1,0 +1,145 @@
+details {
+    margin: .125em;
+    margin-bottom: .5em;
+
+    overflow: hidden;
+}
+
+details::details-content {
+    display: flex;
+    flex-direction: row;;
+    margin-top: .5em;
+
+    background-color: var(--Achtergrond-licht-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 1em;
+
+    block-size: 0;
+    transition: 
+        block-size 0.5s,
+        content-visibility .5s; 
+        transition-behavior: allow-discrete;
+}
+
+details[open]::details-content {
+    margin-bottom: 2em;
+    padding: 1em;
+
+    block-size: auto;
+}
+
+summary {
+    background-color: var(--header-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 1em;
+
+    list-style: none;
+    cursor: pointer;
+    display: list-item;
+
+    font-size: 1.5em;
+    color: var(--text-color);
+
+    padding: .5em;
+}
+
+summary::before {
+    display: inline-block;
+
+    content: "▶";
+    margin: .2em;
+    	
+
+    transition: transform 1s ease;
+    transform-origin: center;
+    transform: rotate(90deg);
+}
+
+details[open] summary::before {
+    transform: rotate(270deg);
+}
+
+img {
+    height: 15em;
+    width: 15em;
+
+    border-radius: 3em;
+}
+
+h3 {
+    box-shadow: var(--box-shadow);
+}
+
+h5 {
+    text-align: center;
+    font-size: 2em;
+    margin-block: 0.5em;
+}
+
+ul {
+    background-color: var(--p-background);
+    border-radius: 1em;
+
+    padding: 1em;
+}
+
+h6 {
+    background-color: var(--header-color);
+    border-radius: 1em;
+    color: var(--text-color);
+
+    padding: 0.5em;
+    margin-block: .5em;
+}
+
+p {
+    margin-block: 1em;
+    padding-inline: 1em;
+
+    text-align: center;
+}
+
+.intro {
+    background-color: var(--p-background);
+    border-radius: 1em;
+}
+
+.nerd-content p {
+    text-align: left;
+}
+
+
+/* Roel Nieskens code voorbeeld */
+.font-voorbeelden {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding-inline: 4em;
+    font-size: 3vw;
+}
+
+#Fonts, #Fonts * {
+    font-family: 'EB Garamond', serif;
+    font-feature-settings: "liga" 1;
+}
+
+span {
+    font-variant-numeric: diagonal-fractions;
+}
+
+
+
+
+/* Custom select */
+
+select {
+    border-radius: 1em;
+
+    padding: .5em;
+    margin-inline: 1em;
+}
+
+select::picker {
+    margin-block: .5em;
+}

@@ -1,0 +1,51 @@
+.mobile-view {
+    width: 550px;
+    height: 50em;
+}
+
+.projecten-opzet {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projecten-opzet p:nth-of-type(2) {
+    width: 520px;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    padding-inline: .5em;
+}
+
+h3 {
+    padding: 1em;
+}
+
+h4 {
+    padding: .5em;
+    border-bottom: 1px solid black;
+}
+
+p {
+    background-color: var(--p-background);
+    border-radius: 1em;
+
+    padding-inline: 1em ;
+}
+
+ul {
+    background-color: var(--p-background);
+    border-radius: 1em;
+
+    padding: 1em;
+}
+
+li {
+    font-size: 1em;
+}
+
+
+
+

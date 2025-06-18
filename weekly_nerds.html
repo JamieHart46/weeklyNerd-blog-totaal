@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <link rel="stylesheet" href="../styles/base.css" />
+       <link rel="stylesheet" href="../styles/weekly_nerds.css" />
+       <link rel="stylesheet" href="../styles/buildings.css" />
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <header>
+        <a href="/index.html">
+            <h1 class="header-titel">Jamie Hart</h1>
+        </a>
+            <nav class="header-nav">
+                <a href="/weekly_nerds.html">Weekly Nerds</a>
+                <a href="/projecten.html">Projecten</a>
+                <a href="/hackaton.html">Hackaton</a>
+                <a href="/meesterproef.html">Meesterproef</a>
+            </nav>
+    </header>
+
+    <main>
+        <h1>Weekly Nerd sprekers</h1>
+        <p class="intro">Hier is een lijst van alle weekly nerds die gedurende deze minor zijn gevolgd. Een samenvatting van hun verhaal, wat eruit is meegenomen
+        en in hoeverre ik er iets aan had of iets mee ga doen. </p> 
+           <select id="NerdSorteer" onchange="sorteerDetailsOpKeuze()">
+                <option value="orgineel">Oud - Nieuw</option>
+                <option value="omgekeerd">Nieuw - Oud</option>
+                <option value="AtotZ">A - Z</option>
+                <option value="ZtotA">Z - A</option>
+            </select>
+        <!-- WAFS -->
+        <section class="weekly-nerds-List" id="Nerds-List">
+        
+        <details>
+            <summary>Kylian Valkhof</summary>
+            <img src="Images/KylianValkhof.jpeg" alt=" foto Kylian Valkhof">
+            <div class="nerd-content">
+                <p>De eerste weekly nerd, was van Kylain Valkhof. Waar het op neer kwam is dat als je iets gaat maken, je altijd de minst krachtige taal gebruikt om dit te doen. Javascript is een heel erg sterke codeertaal. Dit moet dus altijd het laatste zijn wat je gebruikt. Als iets met html kan, gebruik je eerst html. 
+                Zo niet gebruik je css en als het ook niet met css kan, pas dan gebruik je Javascript</p>
+                <h5>"Rule of least power"</h5>
+                <p>Javascript is het zwaarste om in te laden op een grote site en duurt ook langer. Het is daarom beter om html en CSS te gebruiken als het daarmee kan 
+                html en CSS zijn talen die tot steeds meer in staat zijn en door nieuwe ontwikkelingen wordt Javascript steeds minder nodig.
+                </p>
+                <ul>
+                    <li>Interessant: ✅</li>
+                    <li>Nuttig: ✅</li>
+                </ul>
+                <p>Ik ben al niet goed in Javascript, dus het is goed om te weten dat de meeste dingen beter met html en CSS gedaan kunnen worden 
+                    en dat er ook steeds meer mee gedaan kan worden.</p>
+            </div>
+        </details>
+
+        <!-- CSS en BT -->
+        <details>
+            <summary>Roel Nieskens</summary>
+            <img src="/Images/roelnieskens.jpeg" alt="foto Roel Nieskens">
+            <div class="nerd-content">
+                <p>Fonts hebben verschillende features in het browser die het uiterlijk van de tekst kunnen aanpassen. Deze features kunnen
+                betrekking hebben tot letters, cijfers, eenheden, etc.
+                bijvoorbeeld:</p>
+
+                <div class="font-voorbeelden" id="Fonts">
+                    <h6> 1/3 wordt <span>1/3</span></h6> 
+                    <h6> f i wordt fi</h6>
+                </div>
+                <p>Dit kan gedaan worden met maar een paar regels CSS.<br>
+                font-feature-settings: "liga" 1;<br>
+                font-variant-numeric: diagonal-fractions;</p>
+                <p>Roel heeft een site genaamd wackamafondoe, waarop je een font kan invoegen en deze alle variables en functies van de font analyseerd en 
+                teruggeeft. Voor als je wilt weten wat er allemaal mogelijk is met een bepaalde font.
+                </p>
+
+                <ul>
+                    <li>Interessant: ✅</li>
+                    <li>Nuttig: ✅</li>
+                    
+                </ul>
+                <p>Reflectie: Dit was allemaal heel nieuw voor mij. Ik wist niet dat er zoveel mogelijk was met fonts, want ik dacht dat deze gewoon op
+                één manier werkte, maar dat er dus voor veel fonts verschillende opties zijn, voor zowel leesbaarheid als styling is goed om te weten.
+                </p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Cassie Evans</summary>
+            <img src="Images/CassieEvans.png" alt="foto Cassie Evans">
+            <div class="nerd-content">
+                <p>GSAP is een API die gebruikt kan worden om alles op een pagina moeiteloos te animeren.
+                Het gebruikt hiervoor tweening en dit zorgt ervoor dat de animatie heel smooth verloopt.</p>
+
+                <ul>
+                    <li>Interessant: ✅</li>
+                    <li>Nuttig: ❌</li>
+                </ul>
+                <p>Reflectie: Wat er allemaal mogelijk is met Gsap is wel vet, maar veel van deze dingen zijn waarschijnlijk ook te doen met CSS in plaats van
+                Javascript. Wij hebben ook bij vorgaande sprekers en van docenten te horen gekregen dat je Javascript alleen moet gebruiken als het niet met een 
+                andere taal kan, dus zal ik dit waarschijnlijk niet zo snel gebruiken.
+                </p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Jeremy Keith</summary>
+            <img src="Images/Author_Jeremy_Keith_large.jpg" alt="foto Jeremy Keith">
+            <div class="nerd-content">
+                <p>Jeremy sprak in zijn college over een aantal verschillende dingen. Ten eerste zijn twee soorten programmeren. Imperative en declaritive. Imperative is stap voor stap, zoals het browser het leest en uitvoert.
+                Een voorbeeld van een Imperatieve taal is Javascript.
+                Dan is er declaritive. Dit is het benoemen van de output, zoals wordt gedaan met HTML en et CSS.<br><br>
+                
+                Verder heeft hij het gehad over Pastels law voor user interactions. Dit ging erover dat je niet te streng moet zijn op de invoer van de
+                gebruiker. Als de gebruiker bijvoorbeeld bij de invoer niet dezelfde formmat voor iets gebruikt als bedoeld was, 
+                laat het dan alsnog werken.
+                Zorg dat je fouten van de gebruiker kan opvangen, zodat de pagina makkelijker en fijner te gebruiken is.
+                </p>
+
+                <ul>
+                    <li>Interessant: ✅</li>
+                    <li>Nuttig: ✅</li>
+                </ul>
+                <p>Reflectie: Het nuttige aan Jeremy Keith zijn verhaal was, dat hij heeft uitgelegd, waarmee en op wat voor manieren data opgeslagen kan worden 
+                dit was belangrijk voor ons project en dus heel nuttig. Ook heeft hij veel uitgelegd over html en UX, wat belangrijk was voor het vak BT. Deze dingen 
+                waren dus direct toepasbaar aan de opdracht waar wij mee bezig waren.
+                </p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Nils Binder</summary>
+            <img src="/Images/NilsBinder.jpeg" alt="foto Nils Binder">
+            <div class="nerd-content">
+                <p>Nils heeft twee keer zijn verhaal voor ons gedaan. Één keer tijdens het vak CSS to the rescue en één keer tijdens Pre CSS day.
+                Hij praatte over wrappers in CSS en over het loslaten van standaard ontwerpen en layouts en expirimenteren met niet grid structuren.<br><br>
+                
+                Een wrapper in CSS is bedoeld om een pagina te laten werken op elk voormaat van scherm. 
+                Het voorziet de pagina van witruimte aan de zijkanten, een beetje padding en een max-width<br><br>
+
+                Tegenwoordig zou je zo een wrapperinstellen.<br>
+                width: min(100% - 3rem, 75rem)<br>
+                margin-inline: auto;<br><br>
+            
+                Door figma, tailwind en AI wordt webdsign makkelijker, maar ook veel saaier.
+                Daarom is het belangrijk om geen vaste grid of layout te gebruiken, om zo 
+                het design anders en mooier te maken.<br><br>
+                
+                minmax(0, ??rem)
+                maakt een colomn suggestief. Dat betekend dat als de ruimte nodig is voor een andere 
+                column met een minmax die geen 0 heeft, verdwijnt die column. Dat helpt heel erg om een pagina makkelijker responsive te maken.</p>
+
+                <ul>
+                    <li>Interessant: ✅</li>
+                    <li>Nuttig: ✅</li>
+                </ul>
+                <p>Reflectie: Wit ruimte en padding is iets waar ik vaak moeite mee had bij het ontwerpen van een pagina tijdens de minor en de uitleg van 
+                Nils over wrappers hebben daar heel erg mee geholpen. Ik gebruik zijn techniek nu elke keer voor mijn projecten en de responsiveness, dus deze 
+                heb ik veel aan gehad.
+                </p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Julia Miocene</summary>
+            <img src="/Images/juliaMiocene.jpg" alt="foto Julia Miocene">
+            <div class="nerd-content">
+                <p>Lighting and shadows, with colours and blur<br>
+
+                Nesting to make it work together
+                rounded ends and overlap for proper joints. 
+                And to make it even smoother make more than one part and nest it inside each other.<br><br>
+
+                Voor menselijke animaties, gebruik echte anotomie om te kijken hoe het lichaam werkt en wat dus realistisch is.
+                (Waar de gewrichten zitten, welke beweging wel kan welke niet<br><br>
+
+                Gebruik custom properties, voor het makkelijker aanpassen van de animatie om het te laten kloppen)<br>
+
+                Keyframes hebben niet 20 stappen nodig. Alleen elke nieuwe positie en het browser doet alles ertussen.<br>
+
+                Sculpting met clippath en mask</p>
+
+                <ul>
+                    <li>Interessant: ✅</li>
+                    <li>Nuttig: ✅</li>
+                </ul>
+                <p>Reflectie: Animaties waren iets wat ik graag wilde leren en op de tijd van het college van Julia was ik er nog niet heel goed in en begreep
+                ik haar verhaal nog niet helemaal. Nu dat ik meer kennis en ervaring heb vind ik haar verhaal en tips voor animeren ook veel interessanter en
+                kan ik er ook echt iets mee. Tijdens de hackaton heb ik geprobeerd om het toe te passen, maar lukte het nog niet helemaal, maar ging het alsnog 
+                een stuk beter.
+                </p>
+            </div>
+        </details>
+
+        <!-- HCD en API -->
+        <details>
+            <summary>Rosa Schuurman</summary>
+            <img src="" alt="Foto Rosa Schuurman">
+            <div class="nerd-content">
+                <p>Rosa had het over verschillende manier om oude apparaten een nieuwe functie te maken door deze te 'hacken'. 
+                Door dingen uit te proberen met verschillende testen en short circuits kan je verschillende beelden lichten en geluiden produceren.
+                </p> 
+
+                <ul>
+                    <li>Interessant: ❌</li>
+                    <li>Nuttig: ❌</li>
+                </ul>
+                <p>Reflectie: Deze kant van tech vond ik niet heel interessant. Vooral omdat het niet iets was waar ik bekend mee was en het ook niet echt van toepassing 
+                was binnen de minor. Vooral de sprekers die helpen bij de vooruitgang van de projecten vond ik interessant en dat was deze niet.
+                </p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Niels Leenheer</summary>
+            <img src="/Images/NielsLeenheer.jpeg" alt="foto Niels Leenheer">
+            <div class="nerd-content"></div>
+                <p>Met Libraries van Niels apparaten koppelen aan site.
+
+                Vershillende talen van verschillende apparaten</p>
+
+                <ul>
+                    <li>Interessant: ❌</li>
+                    <li>Nuttig: ❌</li>
+                </ul>
+                <p>Reflectie: Net als het praatje van Rosa, vond ik deze niet heel interessant. Het was niet toepasbaar voor waar wij mee bezig waren en voelde meer als Een
+                pitch voor zijn product. Dit is niet iets waar ik denk mee te gaan werken later, ondanks dat het voor zijn doelgroep heel erg handig is.
+                </p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Nienke de Keizer</summary>
+            <img src="/Images/Nienkedekeijzerjpg.jpg" alt="foto Nienke de Keizer">
+            <div class="nerd-content">
+                <p>Veel gemaakte fouten zijn div's die als buttons werken, omdat die voor screenreaders niet werken. Weinig contrast of tekst. De verhouding moet minimaal 3:1 zijn. en in de actieve staat is het beter dat dit nog hoger is.
+
+                Veel bedrijven houden bij ontwikkeling van hun apps of webpages geen rekening met accesibility en ontwerpen alleen voor de meerderheid.
+                Mensen met beperkingen zoals, blinden of slechtziende, slechthorende, fysiek beperkt, etc kunnen hierdoor niet of slecht gebruik maken 
+                van de applicaties. 
+                Belangrijk is feedback in de vorm van beweging van actieve of inactieve staat, kleur of geluid. Het contrast tussen kleuren om het beeld duidelijk zichtbaar te maken. Het werken van screen readers
+
+                Onderzoek
+                - vragen aan de mensen die de beperking hebben.<br>
+                - De mensen die met die mensen werken<br>
+                - De mensen in het vak waar het probleem ligt.<br>
+                </p>
+
+                <ul>
+                    <li>Interessant: ✅</li>
+                    <li>Nuttig: ✅</li>
+                </ul>
+                <li>Reflectie: Dit sloot direct aan op het vak HCD en ik heb hiervan ook dingen kunnen toepassen bij mijn project. Verschillende kleuren met hoger contrast', 
+                feedback bij klikken, het kunnen tabben door alle elementen en het werken van screenreaders door goeie html. Haar manier van testen was ook heel handig niet alleen
+                voor het web maar voor alle soorten projecten.
+                </li>
+            </div>
+            
+        </details>
+
+        <!-- Meesterproef -->
+        <details>
+            <summary>iO digital</summary>
+            <img src="/Images/iO-digital.jpg" alt="logo iO digital">
+            <div class="nerd-content">
+                <p>Bij het bezoek aan iO digital werden drie verhalen verteld. De eerste was van Dave Bitter en ging over AI powered voice interface. 
+                De tweede was van Steven Jonk en ging over het maken van een geautomatiseerde bot en het omzeilen van robotdetectie en de laatste was van
+                Clarke Verdel en ging over component testen.</p>
+                <h7>Dave Bitter</h7>
+                <p>Dave Bitter had gesproken over AI en de combinatie met speech recognition en speech synthesis.
+                In combinatie met AI om een app te maken waar je tegen kan praten en antwoorden terug spreekt.
+                Als het langer duurt voelt het niet meer als een gesprek maar als tegen een robot praten.<br><br>
+
+                Daarom neemt het de audio bestanden in delen en laad het tussen de audio delen, zodat de delen vloeiender achter elkaar door
+                komen en je niet wacht op antwoorden.<br><br>
+
+                AI is gewoon een databron en de UX eromheen maakt het bijzonder.
+                </p>
+
+                <h7>Steven Jonk</h7>
+                <p>Bot die alle volgers van een twitter account volgt.<br>
+
+                Alle volgers van een account ophalen en id's opslaan
+                vervolgens die accounts volgen die opgeslagen zijn.
+                Twitter vermijd auto volgen en ontvolgen<br><br>
+
+                N8N, Puppateer, Twitter API, Postgres, Docker, Ubuntu.<br>
+
+                Obstacles:
+                So menselijk mogelijk maken, door tijd intervals.<br>
+
+                Scraper: 
+                Manier van werken, waarbij je alles van een website kan halen en opslaan in een database, zoals de volgers van een twitter account
+                ophalen en gebruiken. </p>
+
+                <h7>Clarke Verdel</h7>
+                <p>How do you automate testing your components like a real person?<br><br>
+
+                static tooling - Minste tests
+                Component
+                Integration - meeste tests
+                E2E test<br>
+
+                Static tooling: 
+                - Linting
+                - JS type checking
+                - Type script<br><br>
+
+                Component:<br>
+
+                Integration:
+                testen of data tussen systemen gestuurd kan worden.<br>
+
+                E2E:
+                Draaien niet in de browser<br><br>
+
+                Component Browser testing<br>
+                - Visual checks
+                - Makkelijker debugging
+                - meer confidence </p>
+            
+
+            <ul>
+                <li>Interessant: ✅</li>
+                <li>Nuttig: ❌</li>
+            </ul>
+                <p>Reflectie: Van deze was alleen de laatste spreker nuttig, ookal begreep ik er niet heel veel van, maar testen voor alles is gewoon heel praktisch
+                en als dat daarmee makkelijker kan is dat alleen maar goed. Voor de andere waren het wel interessante verhalen, maar niet echt dingen waarmee ik zal werken. 
+                Een AI bot die terugpraat is voor mij niet iets wat ik nodig heb, maar ik snap dat er vraag naar kan zijn. En een volg bot op twitter zou handig
+                zijn om geld mee te verdienen, maar verder heeft het niet een bruikbare functie voor mij.
+                </p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Q42</summary>
+            <img src="/Images/q42.png" alt="logo Q24">
+            <div class="nerd-content">
+                <p>In de digitale wereld is het aan de ontwerpers om te zorgen dat iedereen je product kan gebruiken.
+                Mensen hebben geen beperking, maar hun omgeving maakt hun beperkt, omdat het niet gemaakt is om voor
+                iedereen bruikbaar te zijn.
+
+                vanaf 28 juni is de EAA van kracht. WCAG bevat tips om te helpen bij toegankelijkheid voor gebruikers bij ontwerp.
+
+                1. Wat als iemand het niet goed kan zien?
+                2. Wat als iemand niet goed kan horen?
+                3. Wat als iemand niet goed kan bewegen?
+                4. Wat als je het niet goed snapt?</p>
+
+                <p>Een app die wiskundige functies vertaald naar geluid.
+                Voor mensen die blind zijn om wiskunde te helpen begrijpen. 
+
+                Met toonhoogte de vorm van grafieken laten zien en waar ze op de x of y as zitten. 
+                Toetsenbord zet je vinger op een toets en sleep hem over de toetsen. De toets waar je op zit wordt opgelezen
+                tot je de goeie hebt, dan laat je los en zet het dat teken neer.
+
+                Kopjes zijn de ankerpunten voor een screenreader. Met goeie ankerpunten kan een gebruiker heel makkelijk door een app
+                of site </p>
+
+                <p>Een digitale display van allemaal oude kaarten van door de geschiedenis.
+
+                Elementen in html en css kun je doorheen taben en worden dus ook opgepakt door een screenreader. Met WebGL of andere API's
+                wordt het al snel niet voor een screenreader leesbaar of door tabbaar.
+                </p>
+
+                <ul>
+                    <li>Interessant: ✅</li>
+                    <li>Nuttig: ✅</li>
+                </ul>
+                <p>Reflectie: We waren al heel veel bezig met accesibility en dit sloot daar goed op aan. Zien wat voor dingen je allemaal kan maken
+                en het ook accesible houden was erg indrukwekkend. En de manier van denken bij het ontwikkelen voor alle mensen is ook een goeie denkwijze.
+                </p>
+            </div>    
+        </details>
+
+        <details>
+            <summary>Marieke de Hoop</summary>
+            <img src="" alt="foto Marieke de Hoop">
+            <div class="nerd-content">
+                <p></p>
+
+                <ul>
+                    <li>Interessant: ✅</li>
+                    <li>Nuttig: ✅</li>
+                    <li>Reflectie:</li>
+                </ul>
+            </div>
+        </details>
+
+        <details>
+            <summary>Miriam Suzanne</summary>
+            <img src="Images/miriamSuzanne.jpeg" alt="Foto Miriam Suzanne">
+            <div class="nerd-content">
+                <p>Gebruikers vriendelijkheid
+
+                Wat het web zou moeten zijn. Of de gebruiker het laatste woord zou moeten hebben in het uiterlijk
+                of dat de maker het zou moeten kunnen bepalen.
+
+                Soms is het belangrijk dat gebruikers wel deels belemmerd worden in hun gebruik van het web, omdat soms gebruikers wel fout zitten. Bijvoorbeeld, met haat, racisme, exclusiviteit.
+
+                Geef gebruikers de vrijheid om hun web zelf aan te passen aan hun voorkeuren.</p>
+
+                <ul>
+                    <li>Interessant: ❌</li>
+                    <li>Nuttig: ❌</li>
+                </ul>
+                <p>Reflectie: Van deze snapte ik niet heel veel en ik merkte dat klasgenoten hetzelfde hadden. Het leek niet of er echt een punt was aan het 
+                verhaal. Het ging over de politiek en dan weer over gebruik en allerlei verschillende dingen. Het enige nuttige was om te denken wie er controle
+                over het eindresultaat moet hebben. de ontwerper of de gebruiker.
+                </p>
+            </div>
+        </details>
+        </section> 
+
+       <div class=sky>
+                <div class=sun></div>
+                <div class=clouds></div>
+            </div>
+
+        <div class="building-row-front">
+            
+
+          <div class="building-front">
+            <div class="building-floor"></div>
+            <div class="building-base">
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+            </div>
+          </div>
+
+          <div class="building-front">
+            <div class="building-top"></div>
+            <div class="building-floor">
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+            </div>
+            <div class="building-base">
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+            </div>
+          </div>
+        
+          <div class="building-front">
+            <div class="building-top"></div>
+            <div class="building-floor"></div>
+            <div class="building-base"></div>
+          </div>
+        </div>
+    
+    
+    
+    <div class="building-row-back">
+          <div class="building-back">
+            <div class="building-top"></div>
+            <div class="building-floor"></div>
+            <div class="building-base"></div>
+          </div>
+
+          <div class="building-back">
+            <div class="building-floor"></div>
+            <div class="building-base">
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+            </div>
+          </div>
+      
+        <div class="building-back">
+            <div class="building-top"></div>
+            <div class="building-floor">
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+            </div>
+            <div class="building-base"></div>
+          </div>
+      
+      <div class="building-back">
+            <div class="building-floor"></div>
+            <div class="building-base">
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+              <div class="long-glass"></div>
+            </div>
+          </div>
+      </div>
+    </main>
+
+    <footer>
+        <p>© 2023 Jamie Hart</p>
+        <p>Deze website is gemaakt met HTML, CSS en Javascript.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

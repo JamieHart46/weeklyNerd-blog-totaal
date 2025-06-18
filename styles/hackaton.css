@@ -1,0 +1,13 @@
+h3 {
+    padding: 1em;
+}
+
+p {
+    background-color: var(--p-background);
+    border-radius: 1em;
+
+    padding-inline: 1em ;
+}
+ul {
+    padding-inline: .5em 0;
+}
